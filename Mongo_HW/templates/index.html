@@ -37,7 +37,7 @@
         <div class="col-md-4">
           <div class="row">
             <div class="jumbotron">
-              <h4><strong>Current Weather on Mars</strong></h4>
+              <h2><strong>Current Weather on Mars</strong></h2>
               {{ mars_dict.mars_weather }}
             </div>
           </div>
@@ -55,14 +55,14 @@
           <div class="col-md-12">
             <div class="jumbotron" style="text-align:center">
               <h2><strong>Mars Hemispheres</strong></h2>
-              <br><br>
+              <br>
               <div class="row">
                 {% for hem_images in mars_dict.hemisphere_imgs %} 
                   <div class="col-lg-6">              
                     <img src="{{ hem_images.img_url }}" height="450" width="450" style="border:10px white; border-style:solid">
                     <br><br>
-                    <h5>{{ hem_images.title }}</h5>
-                    <br><br>
+                    <h2>{{ hem_images.title }}</h2>
+                    <br>
                   </div>
                 {% endfor %}
               </div>
